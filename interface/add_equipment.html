@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Equipment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div>
+            <h1>Add Equipment</h1>
+            <p>Visual form prototype for creating an equipment record</p>
+        </div>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="equipment.html">Equipment</a>
+            <a href="requests.html">Requests</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="form-card">
+            <form>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="name">Equipment Name</label>
+                        <input type="text" id="name" placeholder="Example: Mud Pump MP-500">
+                    </div>
+                    <div class="form-group">
+                        <label for="type">Equipment Type</label>
+                        <input type="text" id="type" placeholder="Example: Pumping Equipment">
+                    </div>
+                    <div class="form-group">
+                        <label for="serial">Serial Number</label>
+                        <input type="text" id="serial" placeholder="Example: MP-500-AKT-011">
+                    </div>
+                    <div class="form-group">
+                        <label for="condition">Condition</label>
+                        <select id="condition">
+                            <option>Operational</option>
+                            <option>Needs Maintenance</option>
+                            <option>Under Repair</option>
+                            <option>Out of Service</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="location">Location</label>
+                        <input type="text" id="location" placeholder="Example: Workshop Area 1">
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Last Maintenance Date</label>
+                        <input type="date" id="date">
+                    </div>
+                    <div class="form-group full">
+                        <label for="notes">Notes</label>
+                        <textarea id="notes" placeholder="Additional technical notes"></textarea>
+                    </div>
+                </div>
+                <div class="button-row">
+                    <button class="button" type="button">Save Equipment</button>
+                    <a class="button light" href="equipment.html">Cancel</a>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

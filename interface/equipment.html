@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div>
+            <h1>Equipment Register</h1>
+            <p>List of technical equipment used in workover operations</p>
+        </div>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a class="active" href="equipment.html">Equipment</a>
+            <a href="requests.html">Requests</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="section-title">
+            <h2>Equipment List</h2>
+            <a class="button" href="add_equipment.html">Add Equipment</a>
+        </section>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Serial Number</th>
+                    <th>Condition</th>
+                    <th>Location</th>
+                    <th>Last Maintenance</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Hydraulic Tong HT-120</td>
+                    <td>Well Service Tool</td>
+                    <td>HT-120-AKT-001</td>
+                    <td><span class="badge success">Operational</span></td>
+                    <td>Aktobe Base Warehouse</td>
+                    <td>2026-05-18</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Mud Pump MP-500</td>
+                    <td>Pumping Equipment</td>
+                    <td>MP-500-AKT-002</td>
+                    <td><span class="badge warning">Needs Maintenance</span></td>
+                    <td>Workshop Area 1</td>
+                    <td>2026-03-28</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Workover Rig WR-75</td>
+                    <td>Workover Rig</td>
+                    <td>WR-75-AKT-003</td>
+                    <td><span class="badge success">Operational</span></td>
+                    <td>Field Site 12</td>
+                    <td>2026-05-30</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Pressure Gauge PG-700</td>
+                    <td>Measurement Tool</td>
+                    <td>PG-700-AKT-005</td>
+                    <td><span class="badge warning">Under Repair</span></td>
+                    <td>Workshop Area 2</td>
+                    <td>2026-02-15</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Cementing Hose CH-60</td>
+                    <td>Hose Equipment</td>
+                    <td>CH-60-AKT-009</td>
+                    <td><span class="badge danger">Out of Service</span></td>
+                    <td>Workshop Area 1</td>
+                    <td>2026-01-20</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>

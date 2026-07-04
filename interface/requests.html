@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requests</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div>
+            <h1>Maintenance and Workover Requests</h1>
+            <p>Tracking service requests related to oilfield equipment</p>
+        </div>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="equipment.html">Equipment</a>
+            <a class="active" href="requests.html">Requests</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="section-title">
+            <h2>Request List</h2>
+            <a class="button" href="create_request.html">Create Request</a>
+        </section>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Equipment</th>
+                    <th>Priority</th>
+                    <th>Status</th>
+                    <th>Created Date</th>
+                    <th>Planned Completion</th>
+                    <th>Assigned To</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Mud Pump MP-500</td>
+                    <td><span class="badge warning">High</span></td>
+                    <td><span class="badge warning">In Progress</span></td>
+                    <td>2026-06-08</td>
+                    <td>2026-06-14</td>
+                    <td>Orazbek Daniyar</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Cementing Hose CH-60</td>
+                    <td><span class="badge danger">Critical</span></td>
+                    <td><span class="badge info">New</span></td>
+                    <td>2026-06-11</td>
+                    <td>2026-06-13</td>
+                    <td>Smagulov Alibek</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Blowout Preventer BOP-180</td>
+                    <td><span class="badge danger">Critical</span></td>
+                    <td><span class="badge success">Completed</span></td>
+                    <td>2026-06-03</td>
+                    <td>2026-06-07</td>
+                    <td>Orazbek Daniyar</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>Workover Rig WR-75</td>
+                    <td><span class="badge warning">High</span></td>
+                    <td><span class="badge warning">In Progress</span></td>
+                    <td>2026-06-18</td>
+                    <td>2026-06-24</td>
+                    <td>Orazbek Daniyar</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>Wellhead Tool Kit WTK-45</td>
+                    <td><span class="badge neutral">Low</span></td>
+                    <td><span class="badge success">Completed</span></td>
+                    <td>2026-06-19</td>
+                    <td>2026-06-22</td>
+                    <td>Smagulov Alibek</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>

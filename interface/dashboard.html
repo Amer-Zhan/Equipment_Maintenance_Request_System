@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div>
+            <h1>Dashboard</h1>
+            <p>Summary of equipment condition and maintenance requests</p>
+        </div>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a class="active" href="dashboard.html">Dashboard</a>
+            <a href="equipment.html">Equipment</a>
+            <a href="requests.html">Requests</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="grid">
+            <div class="card">
+                <div class="card-title">Total Equipment</div>
+                <div class="card-value">10</div>
+            </div>
+            <div class="card">
+                <div class="card-title">Active Requests</div>
+                <div class="card-value">8</div>
+            </div>
+            <div class="card">
+                <div class="card-title">Completed Requests</div>
+                <div class="card-value">5</div>
+            </div>
+            <div class="card">
+                <div class="card-title">Critical Requests</div>
+                <div class="card-value">3</div>
+            </div>
+        </section>
+
+        <section class="section-title">
+            <h2>Recent Maintenance Requests</h2>
+            <a class="button" href="create_request.html">Create Request</a>
+        </section>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Equipment</th>
+                    <th>Priority</th>
+                    <th>Status</th>
+                    <th>Created Date</th>
+                    <th>Assigned To</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>15</td>
+                    <td>Diesel Generator DG-300</td>
+                    <td><span class="badge warning">High</span></td>
+                    <td><span class="badge info">New</span></td>
+                    <td>2026-06-25</td>
+                    <td>Orazbek Daniyar</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>Hydraulic Tong HT-120</td>
+                    <td><span class="badge neutral">Medium</span></td>
+                    <td><span class="badge warning">In Progress</span></td>
+                    <td>2026-06-24</td>
+                    <td>Smagulov Alibek</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>Blowout Preventer BOP-180</td>
+                    <td><span class="badge danger">Critical</span></td>
+                    <td><span class="badge info">New</span></td>
+                    <td>2026-06-23</td>
+                    <td>Orazbek Daniyar</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>

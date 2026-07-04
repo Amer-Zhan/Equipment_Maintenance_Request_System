@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Request</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div>
+            <h1>Create Maintenance Request</h1>
+            <p>Visual form prototype for registering a service request</p>
+        </div>
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="equipment.html">Equipment</a>
+            <a href="requests.html">Requests</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="form-card">
+            <form>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="equipment">Equipment</label>
+                        <select id="equipment">
+                            <option>Mud Pump MP-500</option>
+                            <option>Workover Rig WR-75</option>
+                            <option>Blowout Preventer BOP-180</option>
+                            <option>Diesel Generator DG-300</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="priority">Priority</label>
+                        <select id="priority">
+                            <option>Low</option>
+                            <option>Medium</option>
+                            <option>High</option>
+                            <option>Critical</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="assigned">Assigned Employee</label>
+                        <select id="assigned">
+                            <option>Orazbek Daniyar Serikovich</option>
+                            <option>Smagulov Alibek Kanatovich</option>
+                            <option>Sultangaliev Adilzhan Ruslanovich</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="planned">Planned Completion Date</label>
+                        <input type="date" id="planned">
+                    </div>
+                    <div class="form-group full">
+                        <label for="description">Request Description</label>
+                        <textarea id="description" placeholder="Describe the technical issue or required maintenance work"></textarea>
+                    </div>
+                </div>
+                <div class="button-row">
+                    <button class="button" type="button">Create Request</button>
+                    <a class="button light" href="requests.html">Cancel</a>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
